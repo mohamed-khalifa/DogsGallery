@@ -1,0 +1,2 @@
+rootProject.name = "Dogs Gallery"
+include ':app'
