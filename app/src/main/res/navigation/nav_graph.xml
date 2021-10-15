@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dogsGalleryFragment">
+    <fragment
+        android:id="@+id/dogsGalleryFragment"
+        android:name="com.task.dogsgallery.presentation.ui.DogsGalleryFragment"
+        android:label="fragment_dogs_gallery"
+        tools:layout="@layout/fragment_dogs_gallery">
+        <action
+            android:id="@+id/action_dogsGalleryFragment_to_dogsDetailsFragment"
+            app:destination="@id/dogsDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dogsDetailsFragment"
+        android:name="com.task.dogsgallery.presentation.ui.DogsDetailsFragment"
+        android:label="fragment_dogs_details"
+        tools:layout="@layout/fragment_dogs_details" >
+        <argument
+            android:name="dogsDetailsFragmentArgs"
+            app:argType="com.task.dogsgallery.domain.entity.DogsDomainEntities$DogsDomainItem" />
+    </fragment>
+</navigation>
