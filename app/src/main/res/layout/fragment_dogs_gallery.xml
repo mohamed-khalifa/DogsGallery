@@ -17,7 +17,7 @@
         app:veilFrame_baseAlpha="0.6"
         app:veilFrame_highlightAlpha="0.8"
         app:veilFrame_layout="@layout/dog_item_loading_shimmer"
-        app:veilFrame_radius="8dp" />
+        app:veilFrame_radius="@dimen/dimen_8dp" />
 
     <include
         android:id="@+id/dogsErrorView"

@@ -29,9 +29,9 @@ class DogsDetailsFragment : Fragment() {
         (requireActivity() as MainActivity).setupActionBar(binding.dogToolbar)
         val dog: DogsDomainEntities.DogsDomainItem = args.dogsDetailsFragmentArgs
         with(binding) {
-            collapsingToolbar.title = dog.name
-            contentScrolling.dogShortDescriptionTextView.text = dog.shortDescription
-            contentScrolling.dogLongDescriptionTextView.text = dog.description
+            dogCollapsingToolbar.title = dog.name
+            dogContentScrolling.dogShortDescriptionTextView.text = dog.shortDescription
+            dogContentScrolling.dogLongDescriptionTextView.text = dog.description
             dogToolbarImageView.loadUrl(dog.imageUrl)
         }
     }

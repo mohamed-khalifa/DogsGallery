@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <include
-        android:id="@+id/contentScrolling"
+        android:id="@+id/dogContentScrolling"
         layout="@layout/content_scrolling" />
 
     <com.google.android.material.appbar.AppBarLayout
@@ -19,14 +19,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:id="@+id/collapsing_toolbar"
+            android:id="@+id/dogCollapsingToolbar"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="@dimen/dog_collapsing_toolbar_height"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleGravity="bottom"
-            app:expandedTitleMarginEnd="16dp"
-            app:expandedTitleMarginStart="16dp"
+            app:expandedTitleMargin="@dimen/dimen_16dp"
+            app:expandedTitleMarginStart="@dimen/dimen_16dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <ImageView
